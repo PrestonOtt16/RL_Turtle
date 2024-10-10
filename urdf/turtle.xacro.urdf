@@ -1,0 +1,335 @@
+<?xml version="1.0"?>
+<robot name="turtle" xmlns:xacro="http://ros.org/wiki/xacro">
+
+<material name="black">
+  <color rgba="0.1 0.1 0.1 1"/>
+</material>
+
+
+
+<material name="white">
+  <color rgba="0.9 0.9 0.9 1"/>
+</material>
+
+  <link name="dummy">
+  </link>
+  
+
+  <link name="base_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 -0.0505"/>
+      <geometry>
+    	<mesh filename="/home/preston/rl_pkg/src/rl_turtle/meshes/kobuki-base.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="black"/>
+    </visual>
+    
+    <collision>
+     <origin rpy="0 0 0" xyz="0 0 -0.0505"/>
+      <geometry>
+        <mesh filename="/home/preston/rl_pkg/src/rl_turtle/meshes/kobuki-base.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    
+    <inertial>
+      <mass value="3.0"/>
+      <inertia ixx="0.01995" ixy="0.0" ixz="0.0" iyy="0.01995" iyz="0.0" izz="0.03675"/>
+    </inertial>
+  </link>
+  
+  <link name="wheel_holder_1">
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.115 0 -0.070"/>
+      <geometry>
+    	<mesh filename="/home/preston/rl_pkg/src/rl_turtle/meshes/kobuki-wheel-holder-1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="white"/>
+    </visual>
+    
+    <collision>
+     <origin rpy="0 0 0" xyz="-0.115 0 -0.070"/>
+      <geometry>
+        <mesh filename="/home/preston/rl_pkg/src/rl_turtle/meshes/kobuki-wheel-holder-1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    
+    <inertial>
+      <mass value="0.1"/>
+      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+    </inertial>
+  </link>
+  
+  <link name="wheel_holder_2">
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.115 0 -0.070"/>
+      <geometry>
+    	<mesh filename="/home/preston/rl_pkg/src/rl_turtle/meshes/kobuki-wheel-holder-1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="white"/>
+    </visual>
+    
+    <collision>
+     <origin rpy="0 0 0" xyz="-0.115 0 -0.070"/>
+      <geometry>
+        <mesh filename="/home/preston/rl_pkg/src/rl_turtle/meshes/kobuki-wheel-holder-1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    
+    <inertial>
+      <mass value="0.1"/>
+      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+    </inertial>
+  </link>
+  
+  <link name="wheel_1">
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.115 0 -0.0335"/>
+      <geometry>
+    	<mesh filename="/home/preston/rl_pkg/src/rl_turtle/meshes/kobuki-wheel-1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="black"/>
+    </visual>
+    
+    <collision>
+     <origin rpy="0 0 0" xyz="-0.115 0 -0.0335"/>
+      <geometry>
+        <mesh filename="/home/preston/rl_pkg/src/rl_turtle/meshes/kobuki-wheel-1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+      
+    <inertial>
+      <mass value="0.25"/>
+      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+    </inertial>
+  </link>
+  
+  
+  <link name="wheel_2">
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.115 0 -0.0335"/>
+      <geometry>
+    	<mesh filename="/home/preston/rl_pkg/src/rl_turtle/meshes/kobuki-wheel-1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="black"/>
+    </visual>
+    
+    <collision>
+     <origin rpy="0 0 0" xyz="-0.115 0 -0.0335"/>
+      <geometry>
+        <mesh filename="/home/preston/rl_pkg/src/rl_turtle/meshes/kobuki-wheel-1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    
+    <inertial>
+      <mass value="0.25"/>
+      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+    </inertial>
+  </link>
+  
+  <link name="small-wheel-1">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0.114 -0.013"/>
+      <geometry>
+    	<mesh filename="/home/preston/rl_pkg/src/rl_turtle/meshes/kobuki-small-wheel-1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="black"/>
+    </visual>
+    
+    <collision>
+     <origin rpy="0 0 0" xyz="0 0.114 -0.013"/>
+      <geometry>
+        <mesh filename="/home/preston/rl_pkg/src/rl_turtle/meshes/kobuki-small-wheel-1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    
+    <inertial>
+      <mass value="0.10"/>
+      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+    </inertial>
+  </link>
+  
+  <link name="small-wheel-2">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0.114 -0.013"/>
+      <geometry>
+    	<mesh filename="/home/preston/rl_pkg/src/rl_turtle/meshes/kobuki-small-wheel-1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="black"/>
+    </visual>
+    
+    <collision>
+     <origin rpy="0 0 0" xyz="0 0.114 -0.013"/>
+      <geometry>
+        <mesh filename="/home/preston/rl_pkg/src/rl_turtle/meshes/kobuki-small-wheel-1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    
+    <inertial>
+      <mass value="0.10"/>
+      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+    </inertial>
+    
+  </link>
+  
+  
+  
+  <joint name="dummy_joint" type="fixed">
+    <parent link="dummy"/>
+    <child link="base_link"/>
+  </joint>
+  
+  <joint name="slider1" type="prismatic">
+    <parent link="base_link"/>
+    <axis xyz="0 0 -1"/>
+    <child link="wheel_holder_1"/>
+    <limit effort="100" lower="-0.009" upper="0.040" velocity="1.0"/>
+    <dynamics damping="100" friction ="2.5"/>
+    <origin rpy="0 0 0" xyz="0.115 0 0.0095"/>
+  </joint>
+  
+  <joint name="slider2" type="prismatic">
+    <parent link="base_link"/>
+    <axis xyz="0 0 -1"/>
+    <child link="wheel_holder_2"/>
+    <limit effort="100" lower="-0.009" upper="0.040" velocity="1.0"/>
+    <dynamics damping="100" friction ="2.5"/>
+    <origin rpy="0 0 0" xyz="-0.115 0 0.0095"/>
+  </joint>
+  
+  <joint name="right_wheel_joint" type="continuous">
+    <parent link="wheel_holder_1"/>
+    <child link="wheel_1"/>
+    <limit effort="100" velocity="1.0"/>
+    <axis xyz = "1 0 0"/>
+    <origin rpy="0 0 0" xyz="0 0 -0.0350"/>
+  </joint>
+  
+  <joint name="left_wheel_joint" type="continuous">
+    <parent link="wheel_holder_2"/>
+    <child link="wheel_2"/>
+    <limit effort="100" velocity="1.0"/>
+    <axis xyz = "1 0 0"/>
+    <origin rpy="0 0 0" xyz="0 0 -0.03500"/>
+  </joint>
+  
+  <joint name="rev3" type="continuous">
+    <parent link="base_link"/>
+    <child link="small-wheel-1"/>
+    <limit effort="100" velocity="1.0"/>
+    <axis xyz = "1 0 0"/>
+    <origin rpy="0 0 0" xyz="0 -0.114 -0.0375"/>
+  </joint>
+  
+  <joint name="rev4" type="continuous">
+    <parent link="base_link"/>
+    <child link="small-wheel-2"/>
+    <limit effort="100" velocity="1.0"/>
+    <axis xyz = "1 0 0"/>
+    <origin rpy="0 0 0" xyz="0 0.1365 -0.0375"/>
+  </joint>
+  
+<gazebo reference="base_link">
+  <material>Gazebo/Black</material>
+</gazebo>
+  	
+<gazebo reference="wheel_holder_1">
+  <material>Gazebo/White</material>
+  <implicitSpringDamper>true</implicitSpringDamper>
+  <springStiffness>200</springStiffness>
+  <springReference>0.0</springReference>
+  <mu1>1.0</mu1>
+  <mu2>0.0</mu2>
+  <max_vel>0.0</max_vel>
+  <!-- <min_depth>0.001</min_depth> -->
+</gazebo>
+
+<gazebo reference="wheel_holder_2">
+  <material>Gazebo/White</material>
+  <implicitSpringDamper>true</implicitSpringDamper>
+  <springStiffness>200</springStiffness>
+  <springReference>0.0</springReference>
+  <mu1>1.0</mu1>
+  <mu2>0.0</mu2>
+  <max_vel>0.0</max_vel>
+  <!-- <min_depth>0.001</min_depth> -->
+</gazebo>
+ 
+ 	
+<gazebo reference="wheel_1">
+  <material>Gazebo/Grey</material>
+  <mu1>50.0</mu1>
+  <mu2>10.0</mu2>
+  <max_vel>0</max_vel>
+  <min_depth>0.001</min_depth>
+  <kp>1e5</kp>
+  <kd>100.0</kd>
+  <max_vel>0.0</max_vel>
+</gazebo>
+
+<gazebo reference="wheel_2">
+  <material>Gazebo/Grey</material>
+  <mu1>50.0</mu1>
+  <mu2>10.0</mu2>
+  <min_depth>0.001</min_depth>
+  <kp>1e5</kp>
+  <kd>100</kd>
+  <max_vel>0.0</max_vel>
+</gazebo>
+ 	
+<gazebo reference="small-wheel-1">
+  <material>Gazebo/Grey</material>
+  <mu1>0.5</mu1>
+  <mu2>0.1</mu2>
+  <max_vel>0</max_vel>
+  <min_depth>0.001</min_depth>
+  <kp>1e5</kp>
+  <kd>100</kd>
+  <max_vel>0.0</max_vel>
+</gazebo>
+
+<gazebo reference="small-wheel-2">
+  <material>Gazebo/Grey</material>
+  <mu1>0.5</mu1>
+  <mu2>0.1</mu2>
+  <max_vel>0</max_vel>
+  <min_depth>0.001</min_depth>
+  <kp>1e5</kp>
+  <kd>100</kd>
+  <max_vel>0.0</max_vel>
+</gazebo>
+
+
+
+<!-- ros2 controller for turtle -->
+<ros2_control name="GazeboSystem" type="system">
+    <hardware>
+      <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+    </hardware>
+    <joint name="left_wheel_joint">
+      <command_interface name="velocity">
+        <param name="min">-1</param>
+        <param name="max">1</param>
+      </command_interface>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="right_wheel_joint">
+      <command_interface name="velocity">
+        <param name="min">-1</param>
+        <param name="max">1</param>
+      </command_interface>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+  </ros2_control>
+
+  <gazebo>
+    <!-- Joint state publisher -->
+    <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
+      <parameters>$(find rl_turtle)/config/turtle.yaml</parameters>
+    </plugin>
+  </gazebo>
+  
+</robot>
+
+

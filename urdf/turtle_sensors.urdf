@@ -1,0 +1,248 @@
+<?xml version="1.0"?>
+<robot name="turtle">
+
+<material name="black">
+  <color rgba="0.1 0.1 0.1 1"/>
+</material>
+
+<material name="white">
+  <color rgba="0.9 0.9 0.9 1"/>
+</material>
+
+
+  <link name="base">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 -0.0505"/>
+      <geometry>
+    	<mesh filename="package://rl_turtle/meshes/kobuki-base.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="black"/>
+    </visual>
+    
+    <collision>
+     <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://rl_turtle/meshes/kobuki-base.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    
+    <inertial>
+      <mass value="10"/>
+      <inertia ixx="0.4" ixy="0.0" ixz="0.0" iyy="0.4" iyz="0.0" izz="0.2"/>
+    </inertial>
+  </link>
+  
+  <link name="wheel_holder_1">
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.115 0 -0.070"/>
+      <geometry>
+    	<mesh filename="package://rl_turtle/meshes/kobuki-wheel-holder-1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="white"/>
+    </visual>
+    
+    <collision>
+     <origin rpy="0 0 0" xyz="-0.115 0 -0.070"/>
+      <geometry>
+        <mesh filename="package://rl_turtle/meshes/kobuki-wheel-holder-1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    
+    <inertial>
+      <mass value="10"/>
+      <inertia ixx="0.4" ixy="0.0" ixz="0.0" iyy="0.4" iyz="0.0" izz="0.2"/>
+    </inertial>
+  </link>
+  
+  <link name="wheel_holder_2">
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.115 0 -0.070"/>
+      <geometry>
+    	<mesh filename="package://rl_turtle/meshes/kobuki-wheel-holder-1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="white"/>
+    </visual>
+    
+    <collision>
+     <origin rpy="0 0 0" xyz="-0.115 0 -0.070"/>
+      <geometry>
+        <mesh filename="package://rl_turtle/meshes/kobuki-wheel-holder-1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    
+    <inertial>
+      <mass value="10"/>
+      <inertia ixx="0.4" ixy="0.0" ixz="0.0" iyy="0.4" iyz="0.0" izz="0.2"/>
+    </inertial>
+  </link>
+  
+  <link name="wheel_1">
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.115 0 -0.0335"/>
+      <geometry>
+    	<mesh filename="package://rl_turtle/meshes/kobuki-wheel-1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="black"/>
+    </visual>
+    
+    <collision>
+     <origin rpy="0 0 0" xyz="-0.115 0 -0.0335"/>
+      <geometry>
+        <mesh filename="package://rl_turtle/meshes/kobuki-wheel-1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    
+    <inertial>
+      <mass value="10"/>
+      <inertia ixx="0.4" ixy="0.0" ixz="0.0" iyy="0.4" iyz="0.0" izz="0.2"/>
+    </inertial>
+  </link>
+  
+  
+  <link name="wheel_2">
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.115 0 -0.0335"/>
+      <geometry>
+    	<mesh filename="package://rl_turtle/meshes/kobuki-wheel-1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="black"/>
+    </visual>
+    
+    <collision>
+     <origin rpy="0 0 0" xyz="-0.115 0 -0.0335"/>
+      <geometry>
+        <mesh filename="package://rl_turtle/meshes/kobuki-wheel-1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    
+    <inertial>
+      <mass value="10"/>
+      <inertia ixx="0.4" ixy="0.0" ixz="0.0" iyy="0.4" iyz="0.0" izz="0.2"/>
+    </inertial>
+  </link>
+  
+  
+   <link name="small-wheel-1">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0.114 -0.013"/>
+      <geometry>
+    	<mesh filename="package://rl_turtle/meshes/kobuki-small-wheel-1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="black"/>
+    </visual>
+    
+    <collision>
+     <origin rpy="0 0 0" xyz="0 0.114 -0.013"/>
+      <geometry>
+        <mesh filename="package://rl_turtle/meshes/kobuki-small-wheel-1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    
+    <inertial>
+      <mass value="10"/>
+      <inertia ixx="0.4" ixy="0.0" ixz="0.0" iyy="0.4" iyz="0.0" izz="0.2"/>
+    </inertial>
+  </link>
+  
+  <link name="small-wheel-2">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0.114 -0.013"/>
+      <geometry>
+    	<mesh filename="package://rl_turtle/meshes/kobuki-small-wheel-1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="black"/>
+    </visual>
+    
+    <collision>
+     <origin rpy="0 0 0" xyz="0 0.114 -0.013"/>
+      <geometry>
+        <mesh filename="package://rl_turtle/meshes/kobuki-small-wheel-1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    
+    <inertial>
+      <mass value="10"/>
+      <inertia ixx="0.4" ixy="0.0" ixz="0.0" iyy="0.4" iyz="0.0" izz="0.2"/>
+    </inertial>
+  </link>
+  
+  <link name ="camera_base">
+    <visual>
+      <origin rpy = "0 0 0" xyz = "0 0 0"/>
+      <geometry>
+      	<mesh filename="package://rl_turtle/meshes/intel-real-sense.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="white"/>
+    </visual>
+    
+    <collision>
+      <origin rpy = "0 0 0" xyz = "0 0 0"/>
+      <geometry>
+      	<mesh filename="package://rl_turtle/meshes/intel-real-sense.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    
+    <inertial>
+      <mass value = "0.20"/>
+      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+    </inertial>
+  </link>
+  
+  <joint name="slider1" type="prismatic">
+    <parent link="base"/>
+    <axis xyz="0 0 1"/>
+    <child link="wheel_holder_1"/>
+    <dynamics damping="10.0" friction="5.0"/>
+    <limit effort="1000.0" lower="-0.009" upper="0.020" velocity="0.5"/>
+    <origin rpy="0 0 0" xyz="0.115 0 0.0095"/>
+  </joint>
+  
+  <joint name="slider2" type="prismatic">
+    <parent link="base"/>
+    <axis xyz="0 0 1"/>
+    <child link="wheel_holder_2"/>
+    <dynamics damping="10.0" friction="5.0"/>
+    <limit effort="1000.0" lower="-0.009" upper="0.020" velocity="0.5"/>
+    <origin rpy="0 0 0" xyz="-0.115 0 0.0095"/>
+  </joint>
+  
+  <joint name="rev1" type="continuous">
+    <parent link="wheel_holder_1"/>
+    <child link="wheel_1"/>
+    <dynamics damping="0.1" friction="1.0"/>
+    <limit effort="1000.0" lower="-0.38" upper="0" velocity="0.5"/>
+    <origin rpy="0 0 0" xyz="0 0 -0.0350"/>
+  </joint>
+  
+  <joint name="rev2" type="continuous">
+    <parent link="wheel_holder_2"/>
+    <child link="wheel_2"/>
+    <dynamics damping="0.1" friction="1.0"/> 
+    <limit effort="1000.0" lower="-0.38" upper="0" velocity="0.5"/>
+    <origin rpy="0 0 0" xyz="0 0 -0.03500"/>
+  </joint>
+  
+  <joint name="rev3" type="continuous">
+    <parent link="base"/>
+    <child link="small-wheel-1"/>
+    <dynamics damping="0.0" friction="0.1"/>
+    <limit effort="1000.0" lower="-0.38" upper="0" velocity="0.5"/>
+    <origin rpy="0 0 0" xyz="0 -0.114 -0.0375"/>
+  </joint>
+  
+  <joint name="rev4" type="continuous">
+    <parent link="base"/>
+    <child link="small-wheel-2"/>
+    <dynamics damping="0.0" friction="0.1"/>
+    <limit effort="1000.0" lower="-0.38" upper="0" velocity="0.5"/>
+    <origin rpy="0 0 0" xyz="0 0.1365 -0.0375"/>
+  </joint>
+  
+  <joint name = "camera_joint" type = "fixed">
+  	<parent link = "base"/>
+  	<child link ="camera_base"/>
+  	<origin rpy="1.57 0 3.145" xyz="0 0.160 0.050"/>
+  </joint>
+</robot>
+
+
